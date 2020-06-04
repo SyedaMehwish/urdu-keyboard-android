@@ -18,20 +18,20 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val numberField: EditText = findViewById(R.id.testNumberField)
-        val numberDecimalField: EditText = findViewById(R.id.testNumberDecimalField)
+//        val numberDecimalField: EditText = findViewById(R.id.testNumberDecimalField)
         val qwertyField: EditText = findViewById(R.id.testQwertyField)
 
         keyboard = findViewById(R.id.customKeyboardView)
         keyboard.registerEditText(CustomKeyboardView.KeyboardType.NUMBER, numberField)
-        keyboard.registerEditText(CustomKeyboardView.KeyboardType.NUMBER_DECIMAL, numberDecimalField)
+//        keyboard.registerEditText(CustomKeyboardView.KeyboardType.NUMBER_DECIMAL, numberDecimalField)
         keyboard.registerEditText(CustomKeyboardView.KeyboardType.QWERTY, qwertyField)
 
-        val switchActivitiesButton: Button = findViewById(R.id.switchActivitiesButton)
-        switchActivitiesButton.setOnClickListener {
-            startActivity(Intent(
-                    this@MainActivity,
-                    AdvancedFeaturesActivity::class.java))
-        }
+//        val switchActivitiesButton: Button = findViewById(R.id.switchActivitiesButton)
+//        switchActivitiesButton.setOnClickListener {
+//            startActivity(Intent(
+//                    this@MainActivity,
+//                    AdvancedFeaturesActivity::class.java))
+//        }
     }
 
     override fun onBackPressed() {
